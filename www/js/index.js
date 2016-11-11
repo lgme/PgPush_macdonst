@@ -34,10 +34,10 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        
+     
          app.push = PushNotification.init({
              "android": {
-                 "senderID": "Your GCM ID"
+                 "senderID": "1009129179610"
              },
              "ios": {
                "sound": true,
@@ -60,6 +60,29 @@ var app = {
 
          app.push.on('error', function(e) {
              console.log("push error = " + e.message);
+         });
+
+         app.push.on('notification', function(data) {
+             console.log('notification event');
+             var cards = document.getElementById("cards");
+             var push = '<div class="row">' +
+               '<div class="col s12 m6">' +
+               '  <div class="card darken-1">' +
+               '    <div class="card-content black-text">' +
+               '      <span class="card-title black-text">' + data.title + '</span>' +
+               '      <p>' + data.message + '</p>' +
+               '      <p>' + data.additionalData.foreground + '</p>' +
+               '    </div>' +
+               '  </div>' +
+               ' </div>' +
+               '</div>';
+             cards.innerHTML += push;
+
+             app.push.finish(function() {
+                 console.log('success');
+             }, function() {
+                 console.log('error');
+             });
          });
 
         

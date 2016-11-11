@@ -30,4 +30,5 @@
     <plugin name="phonegap-plugin-push" spec="1.6.0">
         <param name="SENDER_ID" value="1009129179610" />
     </plugin>
+    <hook type="before_build" src="scripts/copy_resource_files.js" />
 </widget>
