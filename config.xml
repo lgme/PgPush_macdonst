@@ -8,6 +8,7 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <icon src="pg_wings.png" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -23,4 +24,10 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#ee6e73" />
+    <preference name="StatusBarStyle" value="blacktranslucent" />
+    <plugin name="phonegap-plugin-push" spec="1.6.0">
+        <param name="SENDER_ID" value="1009129179610" />
+    </plugin>
 </widget>

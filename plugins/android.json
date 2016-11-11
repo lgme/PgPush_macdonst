@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "1009129179610",
+            "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        }
+    },
+    "dependent_plugins": {}
+}
