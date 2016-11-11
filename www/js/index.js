@@ -34,6 +34,10 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+
+        if (StatusBar.isVisible) {
+           StatusBar.hide();
+        }
         
          app.push = PushNotification.init({
              "android": {
@@ -65,5 +69,30 @@ var app = {
         
     }
 };
+
+function testFbLogin(){
+    var fbLoginSuccess = function (userData) {
+      alert("UserInfo: ", userData);
+      $("#logout").show();
+      $("#login").hide();
+    }
+
+    facebookConnectPlugin.login(["public_profile"], fbLoginSuccess,
+      function loginError (error) {
+        console.error(error)
+      }
+    );
+}
+
+function disconnectFbLogin(){
+    facebookConnectPlugin.logout(
+        function onSuccess() {  
+            alert('Logout successful!'); 
+            $("#logout").hide();
+            $("#login").show();
+
+        }, function onFailure(error) {  alert(error); }
+    );
+}
 
 app.initialize();

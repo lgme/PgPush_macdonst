@@ -22,6 +22,11 @@
         "phonegap-plugin-push": {
             "SENDER_ID": "1009129179610",
             "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "1794458860821410",
+            "APP_NAME": "ro.lucianmesaros.pgpushmacdonst",
+            "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
         }
     },
     "dependent_plugins": {}

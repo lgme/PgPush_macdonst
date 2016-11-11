@@ -40,5 +40,17 @@
         "variables": {
             "SENDER_ID": "1009129179610"
         }
+    },
+    "cordova-plugin-facebook4": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jeduan/cordova-plugin-facebook4",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "1794458860821410",
+            "APP_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        }
     }
 }

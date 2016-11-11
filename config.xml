@@ -30,4 +30,8 @@
     <plugin name="phonegap-plugin-push" spec="1.6.0">
         <param name="SENDER_ID" value="1009129179610" />
     </plugin>
+    <plugin name="cordova-plugin-facebook4" spec="https://github.com/jeduan/cordova-plugin-facebook4">
+        <variable name="APP_ID" value="1794458860821410" />
+        <variable name="APP_NAME" value="ro.lucianmesaros.pgpushmacdonst" />
+    </plugin>
 </widget>
