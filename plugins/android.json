@@ -22,6 +22,9 @@
         "phonegap-plugin-push": {
             "SENDER_ID": "1009129179610",
             "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
+        },
+        "cordova-plugin-googleplus": {
+            "PACKAGE_NAME": "ro.lucianmesaros.pgpushmacdonst"
         }
     },
     "dependent_plugins": {}

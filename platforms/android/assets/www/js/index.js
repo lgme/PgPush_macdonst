@@ -66,4 +66,32 @@ var app = {
     }
 };
 
+
+function testGoogleLogin() {
+    window.plugins.googleplus.login(
+        {},
+        function (obj) {
+            alert("Hi, " + obj.displayName + ", " + obj.email);
+            $("#loginGoo").hide();
+            $("#logoutGoo").show();
+        },
+        function (msg) {
+            alert("error: " + msg);
+        }
+    );
+  }
+
+
+function disconnectGoogleLogin(){
+     window.plugins.googleplus.logout(
+        function (msg) {
+           $("#loginGoo").show();
+           $("#logoutGoo").hide();
+        },
+        function (msg) {
+          alert("error: " + msg);
+        }
+    );
+}
+
 app.initialize();

@@ -40,5 +40,15 @@
         "variables": {
             "SENDER_ID": "1009129179610"
         }
+    },
+    "cordova-plugin-googleplus": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-googleplus"
+        },
+        "is_top_level": true,
+        "variables": {
+            "REVERSED_CLIENT_ID": "ro.lucianmesaros.pgpushmacdonst"
+        }
     }
 }
